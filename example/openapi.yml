@@ -1,0 +1,38 @@
+openapi: 3.0.1
+info:
+  title: NEO Infrastructure API
+  version: 0.2.0
+
+paths:
+  /:
+    get:
+      operationId: endpoints.get_index
+      responses:
+        "200":
+          description: Only to check if the API is available
+          content:
+            application/json:
+              schema:
+                type: object
+
+  /welcome/:
+    get:
+      operationId: endpoints.get_welcome
+      responses:
+        "200":
+          description: Show the welcome message json
+          content:
+            application/json:
+              schema:
+                type: object
+
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: X-API-KEY
+      in: header
+      x-apikeyInfoFunc: auth.apikey_auth
+
+security:
+  - api_key: []
