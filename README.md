@@ -29,4 +29,4 @@ def create_app():
     )
 ```
 
-A better exemple is on [examples folder](/examples).
+A better exemple is on [examples folder](/example).
