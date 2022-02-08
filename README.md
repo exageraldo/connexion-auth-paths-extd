@@ -3,7 +3,7 @@
 
 Small connexion extension to add authentication into spec routes
 
-The [`connexion framework`](https://github.com/zalando/connexion) it's possible to use an parameter called `auth_all_paths` (in `FlaskApp` and `AioHttpApp`), which in your docuemntation ([link](https://github.com/zalando/connexion/blob/2066503c5c9f30c2aaf98ad853ff8e16edd64826/connexion/apps/abstract.py#L35)) is defined as:
+The [`connexion framework`](https://github.com/zalando/connexion) it's possible to use a parameter called `auth_all_paths` (in `FlaskApp` and `AioHttpApp`), which in your documentation ([link](https://github.com/zalando/connexion/blob/2066503c5c9f30c2aaf98ad853ff8e16edd64826/connexion/apps/abstract.py#L35)) is defined as:
 
 ```text
 :param auth_all_paths: whether to authenticate not defined paths
