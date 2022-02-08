@@ -1,1 +1,1 @@
-connexion-auth-paths-extd==0.0.1.dev0
+connexion-auth-paths-extd

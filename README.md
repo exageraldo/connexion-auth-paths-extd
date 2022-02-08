@@ -28,6 +28,14 @@ But the only routes added to the authentication are the `404 Error route` ([link
 
 The idea of this extension is to apply the default authentication on these routes, without changing the behavior of anything else.
 
+### Why?
+
+This was once a requirement requested by the security team in a project.
+
+### What about the UI (`/ui/`) route?
+
+It is not necessary, as it does not make much sense to ask for a auth/token on a page that will be accessed by the browser.
+
 ## Installation
 
 Install `connexion-auth-paths-extd` with `pip`:
