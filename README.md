@@ -3,7 +3,7 @@
 
 Small connexion extension to add authentication into spec routes
 
-The [`connexion framework`](https://github.com/zalando/connexion) it's possible to use an parameter called `auth_all_paths` (in `FlaskApp`and `AioHttpApp`), which in your docuemntation ([link](https://github.com/zalando/connexion/blob/2066503c5c9f30c2aaf98ad853ff8e16edd64826/connexion/apps/abstract.py#L35)) is defined as:
+The [`connexion framework`](https://github.com/zalando/connexion) it's possible to use an parameter called `auth_all_paths` (in `FlaskApp` and `AioHttpApp`), which in your docuemntation ([link](https://github.com/zalando/connexion/blob/2066503c5c9f30c2aaf98ad853ff8e16edd64826/connexion/apps/abstract.py#L35)) is defined as:
 
 ```text
 :param auth_all_paths: whether to authenticate not defined paths
@@ -13,9 +13,12 @@ The [`connexion framework`](https://github.com/zalando/connexion) it's possible 
 And it can be used this way, during app initialization:
 
 ```python
+from connexion import FlaskApp
+
+
 connexion_app = FlaskApp(
     __name__,
-    specification_dir='.',
+    specification_dir='swagger/',
     auth_all_paths=True
 )
 ```
@@ -50,12 +53,15 @@ Install `connexion-auth-paths-extd` with `pip`:
 from connexion.extended.auth_paths_extd import FlaskApp
 
 
-def create_app():
-    connexion_app = FlaskApp(
-        __name__,
-        specification_dir='.',
-        auth_all_paths=True
-    )
+connexion_app = FlaskApp(
+    __name__,
+    specification_dir='swagger/',
+    auth_all_paths=True
+)
 ```
+
+Almost the same, we just change where we are importing the `FlaskApp` class from. The `auth_paths_extd.FlaskApp` object works exactly the same as `connexion.FlaskApp`, same methods, attributes and initialization. No extra parameters are needed, just pass `auth_all_paths` as `True`.
+
+No dependencies are required in addition to the `connexion` itself.
 
 A better exemple is on [examples folder](/example).
