@@ -33,15 +33,15 @@ The idea of this extension is to apply the default authentication on these route
 
 ### Why?
 
-This was once a requirement requested by the security team in a project.
+This was once a requirement requested by the security team in an internal project. The API documentation provides very detailed technical information for the ~~attackers~~ external world, sometimes including email addresses, internal application’s url, API’s structure, and other stuffs. Think that specification it’s like a map, It's also very helpful for them to dig for vulnerabilities and detect targets.
 
-### What about the UI (`/ui/`) route?
+### What about the SwaggerUI (`/ui/`) route?
 
-It is not necessary, as it does not make much sense to ask for a auth/token on a page that will be accessed by the browser.
+It is not necessary, as it does not make much sense to ask for a auth/token on a page that will be accessed by the browser. And if some kind of authentication is required, it must be provided to consume the routes through the interface.
 
 ## Installation
 
-Install `connexion-auth-paths-extd` with `pip`:
+Install with `pip`:
 
 ```bash
   pip install connexion-auth-paths-extd

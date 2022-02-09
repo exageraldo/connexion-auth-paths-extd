@@ -18,10 +18,6 @@ class InternalHandlers(_InternalHandlers):
         return yamldumper(self._spec_for_prefix()), 200, {"Content-Type": "text/yaml"}
 
 class AbstractAPI(_AbstractAPI, metaclass=_AbstractAPIMeta):
-    """
-    Defines an abstract interface for a Swagger API
-    """
-
     def __init__(self, specification, base_path=None, arguments=None,
                  validate_responses=False, strict_validation=False, resolver=None,
                  auth_all_paths=False, debug=False, resolver_error_handler=None,
