@@ -47,6 +47,12 @@ Install with `pip`:
   pip install connexion-auth-paths-extd
 ```
 
+or
+
+```bash
+  pip install connexion-auth-paths-extd[aiohttp]
+```
+
 ## Usage/Examples
 
 ```python
