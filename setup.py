@@ -5,6 +5,9 @@ setup(
     name="connexion_auth_paths_extd",
     version="0.0.2-dev",
     install_requires=[
-        "connexion~=2.10.0"
-    ]
+        "connexion"
+    ],
+    extras_require={
+        'aiohttp': "connexion[aiohttp]"
+    }
 )
