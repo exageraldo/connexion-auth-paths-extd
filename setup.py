@@ -6,5 +6,8 @@ setup(
     version="0.0.2-dev2",
     install_requires=[
         "connexion"
-    ]
+    ],
+    extras_require={
+        'aiohttp': "connexion[aiohttp]"
+    }
 )

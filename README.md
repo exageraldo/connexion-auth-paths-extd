@@ -13,7 +13,7 @@ The [`connexion framework`](https://github.com/zalando/connexion) it's possible 
 And it can be used this way, during app initialization:
 
 ```python
-from connexion import FlaskApp
+from connexion import FlaskApp # or AioHttpApp
 
 
 connexion_app = FlaskApp(
@@ -47,10 +47,16 @@ Install with `pip`:
   pip install connexion-auth-paths-extd
 ```
 
+or
+
+```bash
+  pip install connexion-auth-paths-extd[aiohttp]
+```
+
 ## Usage/Examples
 
 ```python
-from connexion.extended.auth_paths_extd import FlaskApp
+from connexion.extended.auth_paths_extd import FlaskApp # or AioHttpApp
 
 
 connexion_app = FlaskApp(
