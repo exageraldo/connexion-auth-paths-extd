@@ -65,4 +65,5 @@ class FlaskApi(AbstractAPI, _FlaskApi):
 class FlaskApp(_FlaskApp):
     def __init__(self, import_name, server='flask', extra_files=None, **kwargs):
         super(_FlaskApp, self).__init__(import_name,
-                                       FlaskApi, server=server, extra_files=extra_files, **kwargs)
+                                       FlaskApi, server=server, **kwargs)
+        self.extra_files=extra_files
