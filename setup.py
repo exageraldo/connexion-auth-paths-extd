@@ -3,7 +3,7 @@ from setuptools import setup
 # Metadata goes in setup.cfg. These are here for GitHub's dependency graph.
 setup(
     name="connexion_auth_paths_extd",
-    version="0.0.2-dev",
+    version="0.0.2-dev2",
     install_requires=[
         "connexion"
     ],
