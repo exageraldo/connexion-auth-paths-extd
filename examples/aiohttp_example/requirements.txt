@@ -1,2 +1,2 @@
+connexion[aiohttp]
 connexion-auth-paths-extd
-connexion[aiohttp]~=2.10.0

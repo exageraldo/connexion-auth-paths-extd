@@ -1,4 +1,4 @@
-from connexion.extended.auth_paths_extd import FlaskApp
+from connexion.extended.flask import FlaskApp
 
 
 def create_app():

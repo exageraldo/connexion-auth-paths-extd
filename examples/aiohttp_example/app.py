@@ -1,4 +1,4 @@
-from connexion.extended.auth_paths_extd import AioHttpApp
+from connexion.extended.aiohttp import AioHttpApp
 
 
 def create_app(argv):

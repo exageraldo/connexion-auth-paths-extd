@@ -56,7 +56,7 @@ or
 ## Usage/Examples
 
 ```python
-from connexion.extended.auth_paths_extd import FlaskApp # or AioHttpApp
+from connexion.extended.flask import FlaskApp
 
 
 connexion_app = FlaskApp(
